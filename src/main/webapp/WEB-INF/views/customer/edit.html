@@ -26,13 +26,14 @@
         <tr>
             <td>Province:</td>
 <!--            Chưa hiểu đoạn này-->
-                <select name="province">
+               <td>
+                   <select name="province">
                     <option th:each="p : ${provinces}"
                             th:value="${p.id}"
                             th:text="${p.name}"
                             th:selected="(${customer.province}) and (${p.id} == *{province.id})"></option>
-                </select>
-            </td>
+                   </select>
+               </td>
         </tr>
 
         <tr>

@@ -1,7 +1,7 @@
 package com.codegym.config;
 
 
-import com.codegym.formatter.ProvinceFomatter;
+//import com.codegym.formatter.ProvinceFomatter;
 import com.codegym.repository.impl.ICustomerRepository;
 import com.codegym.service.impl.CustomerService;
 import com.codegym.service.impl.ICustomerService;
@@ -207,10 +207,10 @@ public class AppConfig implements WebMvcConfigurer, ApplicationContextAware {
         return new ProvinceService();
     }
     //Fomatter
-    @Override
-    public void addFormatters(FormatterRegistry registry){
-        registry.addFormatter(new ProvinceFomatter(applicationContext.getBean(IProvinceService.class)));
-    }
+//    @Override
+//    public void addFormatters(FormatterRegistry registry){
+//        registry.addFormatter(new ProvinceFomatter(applicationContext.getBean(IProvinceService.class)));
+//    }
 
 
 
